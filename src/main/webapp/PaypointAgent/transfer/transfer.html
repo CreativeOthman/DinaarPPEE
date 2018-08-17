@@ -1,0 +1,45 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb rounded-0 mb-0 ">
+        <li class="breadcrumb-item"><a href="#">Electronic Funds Transfer </a></li>
+    </ol>
+</nav>
+
+<form class="px-3 py-3">    
+    <div class="form-group row">
+         <div class="col-sm-2"><span>Beneficiary Details:</span></div>
+        <label class="col-sm-1">Bank:</label>
+        <select class="form-control col-sm-8 offset-1">
+            <option>Select Bank</option>
+            <option>FirstBank Nigeria Limited</option>
+            <option>ZenithBank Nigeria Limited</option>
+        </select>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 offset-2">Account No:</label>
+        <input type="text" placeholder="NUBAN" ng-model="acnumber"class="form-control-lg col-sm-4">
+        <label class="col-sm-4 form-text">{{"Account Name:"}}</label>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-1 offset-2">Amount:</label>
+        <input type="text" placeholder="Amount" ng-model="amount" class="form-control col-sm-8 offset-1">
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-1 offset-2">Mobile:</label>
+        <input type="text" placeholder="Beneficiary Mobile Number" class="form-control col-sm-8 offset-1">
+    </div>
+   
+    <hr>
+    <div class="form-group row">
+        <div class="col-sm-2"><span>Sender Details:</span></div>
+        <label class="col-sm-1">Fullname:</label>
+        <input type="text" placeholder="sender fullname" ng-model="beneficiaryfname" class="form-control col-sm-5 offset-1">
+        <input type="text" class="form-control col-sm-3" placeholder="sender mobile no">
+    </div>
+ 
+    <div class="form-group row">
+        <span class="col-sm-4"></span>
+    <button class="form-control col-sm-4 btn-info">Send Transfer</button>
+        <span class="col-sm-4"></span>
+    </div> 
+</form>
+
